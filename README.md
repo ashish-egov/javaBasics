@@ -2640,3 +2640,20 @@ public boolean hasCycle() {
 ```
 
 This works by using 2 pointers, a slow and fast pointer. If a cycle is present, the fast pointer will eventually catch up to the slow pointer.
+
+### Comparison table of data structures in java
+
+| Data Structure | Definition | Resizing | Type Safety | Performance | Memory Usage |
+|---|---|---|---|---|---|
+| Array | A fixed-size collection of elements of the same type | Not applicable | Type-safe at compile-time | Fast for accessing elements | Fixed size |
+| ArrayList | A dynamic array that can grow or shrink in size at runtime | Automatic resizing | Type-safe at runtime | Fast for most operations | More memory than fixed-size array |
+| LinkedList | A data structure that consists of a sequence of nodes, each containing a reference to the next node | Not applicable | Type-safe at runtime | Fast for adding or removing elements in the middle of the list | More memory than ArrayList |
+| Stack | A data structure that follows the Last-In-First-Out (LIFO) principle | Not applicable | Type-safe at runtime | Fast for push and pop operations | More memory than ArrayList |
+| Queue | A data structure that follows the First-In-First-Out (FIFO) principle | Not applicable | Type-safe at runtime | Fast for enqueue and dequeue operations | More memory than ArrayList |
+| HashSet | A set that uses hashing to store its elements | Automatic resizing | Type-safe at runtime | Fast for adding, removing, and checking for the presence of elements | More memory than fixed-size array |
+| TreeSet | A set that stores its elements in a sorted tree | Not applicable | Type-safe at runtime | Fast for adding, removing, and checking for the presence of elements | More memory than HashSet |
+| HashMap | A map that uses hashing to store key-value pairs | Automatic resizing | Type-safe at runtime | Fast for adding, removing, and looking up elements by key | More memory than fixed-size array |
+| TreeMap | A map that stores key-value pairs in a sorted tree | Not applicable | Type-safe at runtime | Fast for adding, removing, and looking up elements by key | More memory than HashMap |
+
+Note that the performance and memory usage of each data structure can vary depending on the specific use case and the size of the data being stored.
+
